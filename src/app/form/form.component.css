@@ -82,10 +82,11 @@ form {
   border-radius: 6px;
 }
 
-.ng-dirty.ng-valid.ng-touched .signUp {
+
+/* .ng-dirty.ng-valid.ng-touched .signUp {
   box-shadow: -4px -4px 14px 2px rgba(0, 0, 0, 0.67);
   cursor: pointer;
-}
+} */
 
 .phone {
   display: flex;
@@ -117,6 +118,11 @@ form {
   box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.10);
   width: 329px;
   height: 85px;
+}
+
+.signUpValid {
+  box-shadow: 4px 4px 14px 2px rgba(0, 0, 0, 0.67);
+  cursor: pointer;
 }
 
 .btnbg {
