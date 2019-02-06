@@ -1,0 +1,134 @@
+main {
+  display: flex;
+}
+
+.description,
+.user {
+  font-size: 2rem;
+  width: 330px;
+  margin: 30px;
+}
+.user{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description p {
+  /* font-size: 2rem; */
+  margin: 10px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 330px;
+  margin-top: 60px;
+}
+
+.all {
+  font-size: 1.8rem;
+  color: #494949;
+  font-weight: 300;
+  line-height: 1.8rem;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 29);
+  background-color: #ffffff;
+  box-sizing: border-box;
+  width: 330px;
+  height: 50px;
+  margin: 5px 10px;
+  padding-left: 15px;
+}
+
+.ng-invalid[required].ng-dirty,
+.ng-invalid.ng-touched.ng-dirty,
+.ng-invalid.ng-touched,
+.ng-invalid.required.ng-dirty {
+  border: 2px solid rgb(245, 20, 4);
+}
+
+.ng-dirty.ng-valid.ng-touched {
+  border: 2px solid rgb(0, 128, 38);
+}
+
+.password.ng-dirty.ng-valid.ng-touched {
+  border: 2px solid rgb(0, 128, 38);
+  background-color: rgb(250, 255, 189);
+}
+
+.allForm.ng-dirty.ng-valid.ng-touched,
+.allForm.ng-dirty.ng-invalid.ng-touched,
+.allForm.ng-pristine.ng-valid.ng-touched,
+.allForm.ng-pristine.ng-invalid.ng-touched {
+  border: none;
+  background-color: none;
+  border-radius: 6px;
+}
+
+.ng-dirty.ng-valid.ng-touched .signUp {
+  box-shadow: -4px -4px 14px 2px rgba(0, 0, 0, 0.67);
+  cursor: pointer;
+}
+
+.phone {
+  display: flex;
+}
+
+.countryCode {
+  width: 80px;
+  margin: 5px 5px;
+}
+
+.phoneNumber {
+  width: 240px;
+  margin: 5px 5px;
+}
+
+.signUp {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-align: center;
+  color: #502922;
+  outline: none;
+  border-radius: 10px;
+  background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 48%, rgba(255, 255, 255, 0) 49%, rgba(255, 255, 255, 0.066) 49%, rgba(255, 255, 255, 0.132) 50%, rgba(255, 255, 255, 0.55388256) 100%);
+  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 48%, rgba(255, 255, 255, 0) 49%, rgba(255, 255, 255, 0.066) 49%, rgba(255, 255, 255, 0.132) 50%, rgba(255, 255, 255, 0.55388256) 100%);
+  background: -o-linear-gradient(90deg, rgba(255, 255, 255, 0) 48%, rgba(255, 255, 255, 0) 49%, rgba(255, 255, 255, 0.066) 49%, rgba(255, 255, 255, 0.132) 50%, rgba(255, 255, 255, 0.55388256) 100%);
+  background: -ms-linear-gradient(90deg, rgba(255, 255, 255, 0) 48%, rgba(255, 255, 255, 0) 49%, rgba(255, 255, 255, 0.066) 49%, rgba(255, 255, 255, 0.132) 50%, rgba(255, 255, 255, 0.55388256) 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 48%, rgba(255, 255, 255, 0) 49%, rgba(255, 255, 255, 0.066) 49%, rgba(255, 255, 255, 0.132) 50%, rgba(255, 255, 255, 0.55388256) 100%);
+  box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.10);
+  width: 329px;
+  height: 85px;
+}
+
+.btnbg {
+  border-radius: 10px;
+  background-color: #ffae00;
+  box-sizing: border-box;
+  width: 329px;
+  height: 85px;
+  margin: 20px 0;
+}
+
+.error {
+  align-self: flex-start;
+  color: #f44336;
+  font-size: 1.4rem;
+  text-align: left;
+  margin-left: 10px;
+}

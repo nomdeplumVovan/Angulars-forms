@@ -1,0 +1,75 @@
+<main>
+  <div class="description">
+    <h2>Class Name</h2>
+    <p>spyForm : -- {{spyForm.className}}</p>
+    <p>spyFirstName : -- {{spyFirstName.className}}</p>
+    <p>spyLastName : -- {{spyLastName.className}}</p>
+    <p>spyEmail : -- {{spyEmail.className}}</p>
+    <p>spyPassword : -- {{spyPassword.className}}</p>
+    <p>spyCountryCode : -- {{spyCountryCode.className}}</p>
+    <p>spyPhoneNumber : -- {{spyPhoneNumber.className}}</p>
+    <p>spyButton : -- {{spyButton.className}}</p>
+  </div>
+  <div class="form">
+    <form action="" #spyForm #userForm  class="allForm">
+      <input #spyFirstName #firstName='ngModel' type="text" class="all" placeholder="First Name" name="firstName"
+        [(ngModel)]='user.firstName' required maxlength="50" pattern="[A-Za-z]{2,50}$">
+      <div [hidden]='firstName.valid||firstName.pristine' class="error">
+          from 2 to 50 English letters
+      </div>
+
+      <input #spyLastName #lastName='ngModel' type="text" class="all" placeholder="Last Name" name="lastName"
+        [(ngModel)]='user.lastName' required maxlength="50" pattern="[A-Za-z]{2,50}$">
+      <div [hidden]='lastName.valid||lastName.pristine' class="error">
+          from 2 to 50 English letters
+      </div>
+
+      <input #spyEmail #email='ngModel' type="email" class="all" placeholder="Email" name="email" [(ngModel)]='user.email'
+        required pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" maxlength="50">
+      <div [hidden]='email.valid||email.pristine' class="error">
+          invalid email
+      </div>
+
+      <input #spyPassword #password='ngModel' type="password" class="all password" placeholder="Password" name="password"
+        [(ngModel)]='user.password' required pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]{6,12}$" maxlength="13" >
+      <div [hidden]='password.valid||password.pristine' class="error">
+          6 to 12 characters
+      </div>
+
+      <div class="phone">
+
+        <div class="error-bottom">
+          <input #spyCountryCode  #countryCode='ngModel'   type="text" title="Country Code" class="all countryCode" placeholder="+38" name="countryCode"
+            [(ngModel)]='user.countryCode' required pattern="^[\+]{0,1}([0-9]{2})$" maxlength="5">
+          <div [hidden]='countryCode.valid||countryCode.pristine' class="error">
+            invalid country code
+          </div>
+        </div>
+        <div class="error-bottom">
+
+          <input #spyPhoneNumber #phone='ngModel' type="tel" class="all phoneNumber" placeholder="Phone" name="phone"
+            [(ngModel)]='user.phone' required pattern="([0-9]{10})$" maxlength="11">
+
+          <div [hidden]='phone.valid||phone.pristine' class="error">
+            invalid phone number
+          </div>
+        </div>
+
+      </div>
+      <div class="btnbg">
+        <button #spyButton type="submit" class="signUp signUpValid" (click)='addUser();userForm.reset()'>SIGN UP</button>
+      </div>
+    </form>
+
+    <button class="signUp signUpValid" (click)="saveUsers()" title="Save user in Local Storage" disabled>Save</button>
+    <button class="signUp signUpValid" (click)="saveUsers()" title="Delete user from Local Storage" disabled>Delete</button>
+  
+  </div>
+  <div class="user">
+    <h2>User</h2>
+    {{ user | json }}
+    <h2>Users</h2>
+    {{users| json}}
+  </div>
+
+</main>
