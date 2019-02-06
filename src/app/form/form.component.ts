@@ -22,6 +22,8 @@ export class FormComponent implements OnInit {
 getUsers(){
   return this.users;
 }
+saveUser(){}
+deleteUser(){}
 
   ngOnInit() {
     
