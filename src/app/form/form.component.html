@@ -47,7 +47,7 @@
         </div>
 
       </div>
-      <div class="btnbg">
+      <div class="btnbg" [ngClass]="{btnbgColor: userForm.form.valid }">
         <button #spyButton type="submit" class="signUp signUpValid" (click)='addUser();userForm.reset()'
          [disabled]='!userForm.form.valid'>SIGN UP</button>
         

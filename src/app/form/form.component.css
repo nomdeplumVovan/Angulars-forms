@@ -8,7 +8,8 @@ main {
   width: 330px;
   margin: 30px;
 }
-.user{
+
+.user {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,11 +24,13 @@ h2 {
   font-size: 2.4rem;
   text-align: center;
 }
+
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 form {
   display: flex;
   flex-direction: column;
@@ -118,11 +121,14 @@ form {
 
 .btnbg {
   border-radius: 10px;
-  background-color: #ffae00;
   box-sizing: border-box;
   width: 329px;
   height: 85px;
   margin: 20px 0;
+}
+
+.btnbgColor {
+  background-color: #ffae00;
 }
 
 .error {
